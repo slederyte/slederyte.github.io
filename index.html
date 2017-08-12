@@ -4,57 +4,197 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+
     <header>
         <div class="container">
-            <nav>
-                <div class="logo col-3">
-                    <a href="index.html"> <b> DEVELOPER </b> </a>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">DEVELOPER</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Servces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contact</a>
+                        </li>
+                    </ul>
+
                 </div>
-                <ul class="main-menu col-9">
+            </nav>
+            <!-- <nav>
+                <div class="logo col col-3">
+                    <a href="index.html">Developer</a>
+                </div>
+                <ul class="main-menu col col-9">
                     <li>
-                        <a href="index.html"> Home </a>
+                        <a href="index.html">Home</a>
                     </li>
-                    <li>
-                        <a href=#services> Services </a> 
+                    <li class="unhide-dropdown">
+                        <a href="#services">Services</a>
                         <ul class="dropdown">
-                            <li>
-                                <a href="">Desing</a>
-                            </li>
-                            <li>
-                                <a href="">Test study</a>
-                            </li>
-                            <li>
-                                <a href="">Programing</a>
-                            </li>
+                            <li><a href="">Design</a></li>
+                            <li><a href="">Test studies</a></li>
+                            <li><a href="">Consulting</a></li>
+                            <li><a href="">Programming</a></li>
                         </ul>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
         </div>
         <div class="hero">
             <div class="container">
-                <h1> Hi, I'm DEVELOPER </h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro reiciendis, enim deleniti molestiae, et ratione
-                    quo recusandae! Quisquam odit dolor molestias, tenetur facilis alias tempore vitae, nihil illo blanditiis
-                    qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, voluptatem, vero unde architecto repellendus
-                    consequatur ut consequuntur est voluptatum nemo! Rerum, rem, perspiciatis. Accusamus, eveniet illo dolore
-                    earum eligendi ea. </p>
-                <button> Hire me </button>
+                <h1>Hi, I'm developer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat adipisci doloribus necessitatibus ipsam
+                    exercitationem mollitia dolor nobis maxime dolorum! Sunt nemo assumenda provident quos sint laborum accusamus
+                    nisi cupiditate pariatur.</p>
+                <button class="btn-primary">Hire me!</button>
             </div>
-
+        </div>
     </header>
 
-    <main>
-               <i class="fa fa-user-circle-o" aria-hidden="true"></i>       
+    <main class="container">
+
+        <div class="services text-center">
+            <h1>What we do</h1>
+            <hr>
+            <p class="services__text" id="services">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ab consectetur, odio quod iure, a, incidunt suscipit magni necessitatibus
+                sapiente aperiam recusandae officia cupiditate officiis quia laudantium autem dolores. Iste!
+            </p>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 ">
+                    <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                    <h3>Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 ">
+                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                    <h3>Test studies</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 ">
+                    <i class="fa fa-exchange" aria-hidden="true"></i>
+                    <h3>Consulting</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 ">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h3>Programming</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="services contact" >
+            <h1 class="text-center" id="contacts">Get in touch</h1>
+            <hr>
+
+            <div class="contact__block row">
+                <div class="col-lg-6">
+                    <p class="contact__block-text">
+                        Please fill in some details and I will get back to you as soon as possible.
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <form action="contact">
+
+                        <div class="form-group">
+                            <label>
+                                <span class="form-label">Name:</span>
+                                <input type="text" name="name" required>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <span class="form-label">Surname:</span>
+                                <input type="text" name="surname">
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <span class="form-label">Email:</span>
+                                <input type="email" name="Email" required>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="form-label"> Country: </span>
+                            <select name="country" id="" >
+                                <option value="LT"> Lithuania </option>
+                                <option value="LV"> Latvia </option>
+                                <option value="EE"> Estonia </option>
+                                <option value="PL"> Polant </option>
+                            </select>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="m-right-10" for="">
+                                <input type="radio" name="project" value="web">
+                                Web
+                            </label>
+                            <label class="m-right-10" for="">
+                                <input type="radio" name="project" value="mobile">
+                                Mobile
+                            </label>
+                            <label class="m-right-10" for="">
+                                <input type="radio" name="project" value="destop">
+                                Destop
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="notes" id="" cols="5" rows="3" placeholder="Your comments"> </textarea>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label>
+                                    <input type="checkbox" name="Subscribe" value="true">
+                                    Get latest news
+                                </label>
+                        </div>
+
+
+                        <div class="form-group">
+                            <button type="submit" class="btn-primary">Send</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
     </main>
 
     <footer>
+      <!--  <div class="row">
+            <div <div class="col-lg">Text</div>
+            <div <div class="col-lg">Text</div>
+            <div <div class="col-lg">Text</div>
+-->
 
     </footer>
 
